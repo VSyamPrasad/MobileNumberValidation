@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OTP Verification</title>
+</head>
+<body>
+<h2>Enter OTP</h2>
+    <form action="OTP" method="post">
+        <input type="hidden" name="mobileNumber" value="<%= request.getParameter('mobileNumber') %>">
+        <input type="text" name="otp" placeholder="Enter OTP" required>
+        <br>
+        <input type="submit" value="Verify OTP">
+    </form>
+</body>
+</html>
